@@ -34,7 +34,7 @@ h2 {
 	font-size: 1.125em;
 }
 h3 {
-	font-size: 0.75em;
+	font-size: .75em;
 }
 
 p {
@@ -59,9 +59,9 @@ header {
 
 header h1 {
 	margin: 0;
-	padding: 38px 20px 20px 20px;
-	width: 100%;
-	border-bottom: 3px solid #77a466;
+    padding: 38px 20px 20px 20px;
+    border-bottom: 3px solid #77a466;
+    width: 100%;
 }
 header h1 span {
 	color: #77a466;
@@ -71,17 +71,20 @@ header nav {
     padding: 20px 0;
     width: 100%;
 }
+
 header nav ul {
 	margin: 0;
 	padding: 0;
 }
+
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 0.875em;
-	padding: 10px 0;
-	list-style: none;
+    font-size: .875em;
+    padding: 10px 0;
+    list-style: none;
 }
+
 header nav ul li a {
 	text-decoration: none;
 	color:#77a466;
@@ -90,10 +93,10 @@ header nav ul li a {
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .main-image img {
@@ -104,27 +107,20 @@ header nav ul li a {
 .main-title h2 {
 	text-align: left;
 	padding: 5px 0;
-	color: #77a466;
+    color: #77a466;
 }
+
 .main-title p {
 	padding: 0;
-	font-size: 16px;
-	line-height: 25px;
+	font-size: 1em;
+	line-height: 1.5625;
 }
 
 .section-one,
 .section-two,
 .section-three {
-	border-top: 1px solid #eee;
-	width: 100%;
-}
-
-.section-two h3,
-.section-three h3 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow:row wrap;
+    border-top: 1px solid #eee;
+    width: 100%;
 }
 
 .menu {
@@ -139,12 +135,12 @@ header nav ul li a {
 .reviews {
 	color: #333;
 	font-size: 1em;
-	line-height: 24px;
+	line-height: 1.3125em;
 }
 
 .address {
 	font-size: 1em;
-	line-height: 24px;
+    line-height: 1.5em;
 }
 
 /*The widths are in a percentage!*/
@@ -168,7 +164,7 @@ footer span {
 @media only screen and (min-width: 768px) {
 
 .bottom-section {
-	display: flex;
+    display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 	border-top: 1px solid #eee;
@@ -189,4 +185,24 @@ footer span {
 }
 }
 
-/*@media only screen and (min-width: 1200px) {}*/
+@media only screen and (min-width: 1200px) {
+
+header {
+	justify-content: space-between ;
+}
+
+header h1 {
+	width: 30%;
+	border-bottom: none;
+	text-align: left;
+}
+
+header nav{
+	width: 40%;
+}
+header nav ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+}
